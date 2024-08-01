@@ -27,7 +27,10 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@shadcn/*": [
+        "./src/shared/components/*"
+      ],
     }
   },
   "include": ["src"]
