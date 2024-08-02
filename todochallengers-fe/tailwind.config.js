@@ -13,7 +13,8 @@ export default {
       "underline": "#D9D9D9",
       "password-miss": "#7B7B7B",
       "black":"#000000",
-      "red": "#FF3B30"
+      "red": "#FF3B30",
+      "tab-inactive": "#9B9B9B"
     },
     extend: {
       borderRadius: {
