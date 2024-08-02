@@ -28,7 +28,7 @@ export default {
       },
       width: {
         "large": "736px",
-        "mid": "439px",
+        "middle": "439px",
         "img": "175px",
       }
     },
