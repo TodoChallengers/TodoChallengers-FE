@@ -7,8 +7,8 @@ const HomePage: React.FC = () => {
   const navigate = useNavigate()
 
   return (
-    <div>
-      <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-between min-h-screen">
+      <div className="flex flex-col items-center justify-center flex-grow">
         <img src={logo} alt="Example" className="w-img h-img mb-4" />
         <p className="font-pretendard font-extrabold text-[40px]">todo challengers</p>
         <p className="font-pretendard font-light text-[17px]">다같이 챌린지하세요.</p>
