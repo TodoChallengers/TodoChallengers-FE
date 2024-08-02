@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ReactComponent as BackIcon} from '@/assets/back.svg';
 
 interface HeaderProps {
   text: string;
@@ -16,9 +17,7 @@ const Header: React.FC<HeaderProps> = ({text, element}) => {
         className='absolute left-0 top-1/2 transform -translate-y-1/2 focus:outline-none'
         onClick={() => navigate(-1)}
       >
-        <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 1L2 11L12 21" stroke="black" stroke-width="2"/>
-        </svg>
+        <BackIcon/>
       </button>
       <p className='font-pretendard font-bold text-[17px]'>
         {text}
