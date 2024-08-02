@@ -1,7 +1,20 @@
-import React from 'react'
-import { Button } from '@/shared/components/ui/button'
-const MyButton: React.FC = () => {
-  return <Button>Click Me</Button>
+import React from 'react';
+
+interface ButtonProps {
+  text: string;
+  // className?: string;
+  onClick?: () => void;
 }
 
-export default MyButton
+const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
+  return (
+    <button
+      className= "bg-gray-500"
+      onClick={onClick}
+    >
+      {text}
+    </button>
+  );
+};
+
+export default Button;
