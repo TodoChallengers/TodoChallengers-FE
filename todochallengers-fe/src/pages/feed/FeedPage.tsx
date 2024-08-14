@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import DefaultProfile from '@/assets/default-profile.jpeg'
 import Followers from "@/shared/components/Follwers";
 import Calendar from "@/features/calendar/ui/Calendar";
-
+import TodoList from "@/features/daily-todo-list/ui/TodoList"
 const followers = [
   {
     id:1,
@@ -27,6 +27,34 @@ const followers = [
   }
 ];
 
+const goals = [
+    {
+      id: 1,
+      label: '학교',
+      todos: [
+        { id: 1, label: '1과목', done: false },
+        { id: 2, label: '기능 고민', done: true },
+      ],
+    },
+    {
+      id: 2,
+      label: '할일',
+      todos: [
+        { id: 3, label: '안양천 러닝', done: false },
+      ],
+    },
+    {
+      id: 3,
+      label: '운동',
+      todos: [],
+    },
+    {
+      id: 4,
+      label: '식단',
+      todos: [],
+    },
+  ];
+
 const FeedPage: React.FC = () => {
     const [selectedDate, setSelectedDate] = useState<Date | null>(null);
 
@@ -48,8 +76,14 @@ const FeedPage: React.FC = () => {
             <Calendar onDateSelect={handleDateSelect}/>
           </div>
         </div>
-        <div>
-
+        <div className="ps-12 space-y-6">
+          {goals.map(goal => (
+            <TodoList 
+              key={goal.id} 
+              goalLabel={goal.label} 
+              todos={goal.todos} 
+            />
+          ))}
         </div>
       </div>
       
