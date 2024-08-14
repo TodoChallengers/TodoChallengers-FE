@@ -10,7 +10,9 @@ import { ReactComponent as MyPageInactiveIcon } from '@/assets/tab/mypage-inacti
 
 const MainTab: React.FC = () => {
   const getNavLinkClass = ({ isActive }: { isActive: boolean }) =>
-    isActive ? 'flex flex-col items-center text-black text-[8px] font-pretendard font-semibold space-y-[5px]' : 'flex flex-col items-center text-tab-inactive text-[8px] font-pretendard font-medium space-y-[5px]'
+    isActive ? 
+  'flex flex-col items-center text-black text-[8px] font-pretendard font-semibold space-y-[5px]' : 
+  'flex flex-col items-center text-tab-inactive text-[8px] font-pretendard font-medium space-y-[5px]'
 
   return (
     <div className='flex flex-row item-center justify-center h-[70px] bg-white fixed bottom-0 w-full'>

@@ -16,7 +16,6 @@ const MainPage: React.FC = () => {
   return (
     <Layout>
       <Outlet />
-      <MainTab />
     </Layout>
   )
 }
