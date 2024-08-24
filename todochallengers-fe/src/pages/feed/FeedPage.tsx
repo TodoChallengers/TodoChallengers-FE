@@ -77,7 +77,7 @@ const FeedPage: React.FC = () => {
           />
           <Calendar onDateSelect={handleDateSelect}/>
         </div>
-        <div className="ps-12 space-y-6">
+        <div className="relative ps-12 space-y-6 w-full h-fit pb-6">
           {goals.map(goal => (
             <TodoList 
               key={goal.id} 
@@ -85,9 +85,10 @@ const FeedPage: React.FC = () => {
               prevTodos={goal.todos} 
             />
           ))}
+          <div className="absolute right-0 bottom-0 flex items-center justify-center bg-daily-menu rounded-full w-8 h-4 font-pretendard text-white text-[16px] font-semibold">···</div>
         </div>
+        
       </div>
-      
     </div>
   );
 }

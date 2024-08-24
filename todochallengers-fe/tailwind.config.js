@@ -7,6 +7,8 @@ export default {
     },
     colors: {
       "date-btn":"#D9D9D9",
+      "todo-menu":"#9B9B9B",
+      "daily-menu":"#D9D9D9",
       "button": "rgba(238, 238, 238, 0.6)",
       "button-border": "rgba(238, 238, 238, 1.0)",
       "button-disable": "#CECECE",

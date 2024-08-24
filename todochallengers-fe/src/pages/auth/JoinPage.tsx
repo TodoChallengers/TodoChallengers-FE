@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Button from "@/shared/components/Button";
+import Button from "@/shared/components/button/Button";
 import InputField from "@/shared/components/InputField";
 import Header from "@/shared/components/header/Header";
 // import { useAuthStore } from "@/features/auth/store";

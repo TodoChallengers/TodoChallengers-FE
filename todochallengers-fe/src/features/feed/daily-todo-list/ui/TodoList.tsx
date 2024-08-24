@@ -31,7 +31,7 @@ const TodoList: React.FC<TodoListProps> = ({goalLabel, prevTodos }) => {
     <div ref={containerRef} className="mb-4 space-y-4">
       <div 
         onClick={handleAddClick}
-        className="flex justify-between items-center bg-button-border rounded-full px-1.5 py-1.5 space-x-2"
+        className="flex justify-between items-center bg-button-border rounded-full px-1.5 py-1.5 space-x-2 w-fit"
       >
         <div className="flex-shrink">
           <div className='w-6 h-6 rounded-full flex justify-center items-center'>
@@ -47,7 +47,7 @@ const TodoList: React.FC<TodoListProps> = ({goalLabel, prevTodos }) => {
           +
         </button>
       </div>
-      <div className="mb-4 space-y-4">
+      <div className="mb-4 space-y-4 w-full">
         {todos.map((todo) => (
           <TodoCell key={todo.id} label={todo.label} done={todo.done} />
         ))}

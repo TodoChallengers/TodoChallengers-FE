@@ -14,11 +14,15 @@ const TodoCell: React.FC<TodoCellProps> = ({ label, done: initialDone }) => {
   };
 
   return (
-    <div className="flex items-center">
-      <TodoCheckbox done={done} onClick={handleToggleDone} />
-      <div className={`ml-2 font-pretendard font-medium text-[14px]`}>
-        {label}
-      </div>
+    <div className="relative flex flex-row items-stretch w-full">
+      <div className="flex items-center">
+        <TodoCheckbox done={done} onClick={handleToggleDone} />
+        <div className={`ml-2 font-pretendard font-medium text-[14px]`}>
+          {label}
+        </div>
+      </div> 
+      {/* 여기 메뉴 버튼! */}
+      <div className="absolute right-3 font-pretendard text-todo-menu text-[16px] font-pretendard font-semibold">···</div>
     </div>
   );
 };
