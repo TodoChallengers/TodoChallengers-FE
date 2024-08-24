@@ -1,10 +1,10 @@
 import FeedHeader from "@/shared/components/header/FeedHeader";
 import React, {useState} from "react";
 import DefaultProfile from '@/assets/default-profile.jpeg'
-import Followers from "@/features/follower/Follwers";
-import Calendar from "@/features/calendar/ui/Calendar";
-import TodoList from "@/features/daily-todo-list/ui/TodoList"
-import UserProfile from "@/features/user/UserProfile"
+import Followers from "@/features/feed/follower/Follwers";
+import Calendar from "@/features/feed/calendar/ui/Calendar";
+import TodoList from "@/features/feed/daily-todo-list/ui/TodoList"
+import UserProfile from "@/features/feed/user/UserProfile"
 const followers = [
   {
     id:1,

@@ -3,7 +3,7 @@ import { ReactComponent as AlarmIcon } from '@/assets/feed-page/alarm.svg'
 import { ReactComponent as MenuIcon } from '@/assets/feed-page/menu.svg'
 import logo from '@/assets/todochallengers.png'
 
-const FeedHeader: React.FC = () => {
+const SearchHeader: React.FC = () => {
   return (
     <header className="w-full max-w-screen-md mx-auto flex justify-between items-center p-2">
       <div className='w-6 h-6 bg-button-border rounded-full flex justify-center items-center'>
@@ -21,4 +21,4 @@ const FeedHeader: React.FC = () => {
   );
 };
 
-export default FeedHeader;
+export default SearchHeader;

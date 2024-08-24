@@ -2,8 +2,8 @@ import React from 'react';
 import logo from '@/assets/todochallengers.png'
 import TodoCell from './TodoCell';
 import TodoInput from './TodoInput';
-import useTodoList from '@/features/daily-todo-list/model/useTodoList'
-import useTodoInput from '@/features/daily-todo-list/model/useTodoInput';
+import useTodoList from '@/features/feed/daily-todo-list/model/useTodoList'
+import useTodoInput from '@/features/feed/daily-todo-list/model/useTodoInput';
 
 interface TodoListProps {
   goalLabel: string;
