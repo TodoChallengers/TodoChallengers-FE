@@ -8,6 +8,7 @@ const JoinPage = lazy(() => import('@/pages/auth/JoinPage'))
 const MainPage = lazy(() => import('@/pages/MainPage'))
 const FeedPage = lazy(() => import('@/pages/feed/FeedPage'))
 const AddGoalPage = lazy(() => import('@/pages/feed/AddGoalPage'))
+const ManageGoalPage = lazy(() => import('@/pages/feed/ManageGoalPage'))
 const SearchPage = lazy(() => import('@/pages/search/SearchPage'))
 const MyPage = lazy(() => import('@/pages/mypage/MyPage'))
 
@@ -22,6 +23,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/" element={<MainPage />}>
           <Route path="feed" element={<FeedPage />} />
           <Route path="feed/add-goal" element={<AddGoalPage/>}/>
+          <Route path="feed/manage-goal" element={<ManageGoalPage/>}/>
           <Route path="search" element={<SearchPage />} />
           <Route path="mypage" element={<MyPage />} />
         </Route>

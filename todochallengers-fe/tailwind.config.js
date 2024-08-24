@@ -18,7 +18,17 @@ export default {
       "black":"#000000",
       "white":"#FFFFFF",
       "red": "#FF3B30",
-      "tab-inactive": "#9B9B9B"
+      "tab-inactive": "#9B9B9B",
+      "popup-plus":"#7085F2",
+      "popup-divider": "rgba(238, 238, 238, 1.0)",
+      "soft-peach":"#FFD1DC",
+      "mint-green":"#B2F7EF",
+      "lavender":"#C3B1E1",
+      "baby-blue":"#A2CFFE",
+      "pale-yellow":"#FFF9B1",
+      "blush-pink":"#F4C2C2",
+      "pistachio":"#C5E1A5",
+      "powder-blue":"#B0E0E6",
     },
     extend: {
       borderRadius: {
@@ -36,7 +46,10 @@ export default {
         "large": "736px",
         "middle": "439px",
         "img": "175px",
-      }
+      },
+      boxShadow: {
+        'popup-menu': '0 0 8px rgba(0, 0, 0, 0.3)',
+      },
     },
   },
   plugins: [],
