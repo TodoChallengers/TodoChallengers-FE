@@ -12,9 +12,9 @@ const Header: React.FC<HeaderProps> = ({text, element}) => {
   const navigate = useNavigate();
 
   return (
-    <div className='w-large h-[70px] flex items-center justify-center w-large min-w-mid relative'>
+    <div className='pt-6 w-full max-w-screen-md mx-auto flex justify-between items-center p-2'>
       <button 
-        className='absolute left-0 top-1/2 transform -translate-y-1/2 focus:outline-none'
+        className='focus:outline-none'
         onClick={() => navigate(-1)}
       >
         <BackIcon/>
@@ -22,7 +22,9 @@ const Header: React.FC<HeaderProps> = ({text, element}) => {
       <p className='font-pretendard font-bold text-[17px]'>
         {text}
       </p>
-      {element}
+      <div>
+        {element}
+      </div>
     </div>
   );
 };
