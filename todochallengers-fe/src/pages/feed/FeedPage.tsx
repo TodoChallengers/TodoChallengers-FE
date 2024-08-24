@@ -82,7 +82,7 @@ const FeedPage: React.FC = () => {
             <TodoList 
               key={goal.id} 
               goalLabel={goal.label} 
-              todos={goal.todos} 
+              prevTodos={goal.todos} 
             />
           ))}
         </div>
