@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '@/assets/todochallengers.png';
-import Button from '../shared/components/Button';
+import Button from '../../shared/components/button/Button';
 import { useNavigate } from "react-router-dom";
 
 const HomePage: React.FC = () => {

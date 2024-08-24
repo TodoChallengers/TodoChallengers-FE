@@ -1,9 +1,10 @@
-import FeedHeader from "@/shared/components/FeedHeader";
+import FeedHeader from "@/shared/components/header/FeedHeader";
 import React, {useState} from "react";
 import DefaultProfile from '@/assets/default-profile.jpeg'
-import Followers from "@/shared/components/Follwers";
+import Followers from "@/features/follower/Follwers";
 import Calendar from "@/features/calendar/ui/Calendar";
 import TodoList from "@/features/daily-todo-list/ui/TodoList"
+import UserProfile from "@/features/user/UserProfile"
 const followers = [
   {
     id:1,
@@ -33,7 +34,7 @@ const goals = [
       label: '학교',
       todos: [
         { id: 1, label: '1과목', done: false },
-        { id: 2, label: '기능 고민', done: true },
+        { id: 2, label: '기능 고민', done: false },
       ],
     },
     {
@@ -69,12 +70,12 @@ const FeedPage: React.FC = () => {
       <Followers followers={followers}/>
       <div className="flex flex-grow p-2 w-full max-w-screen-md mx-auto">
         <div className="w-5/12 min-w-80">
-          <div className=" bg-login h-20">
-            프로필 구역
-          </div>
-          <div>
-            <Calendar onDateSelect={handleDateSelect}/>
-          </div>
+          <UserProfile 
+          name="이은화"
+          profileImage={{DefaultProfile}.DefaultProfile}
+          statusMessage="쉿 🤫"
+          />
+          <Calendar onDateSelect={handleDateSelect}/>
         </div>
         <div className="ps-12 space-y-6">
           {goals.map(goal => (

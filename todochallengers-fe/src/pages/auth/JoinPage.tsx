@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Button from "@/shared/components/Button";
 import InputField from "@/shared/components/InputField";
-import Header from "@/shared/components/Header";
+import Header from "@/shared/components/header/Header";
 // import { useAuthStore } from "@/features/auth/store";
 
 const JoinPage: React.FC = () => {
