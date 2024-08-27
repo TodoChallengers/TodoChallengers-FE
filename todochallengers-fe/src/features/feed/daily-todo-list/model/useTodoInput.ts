@@ -11,7 +11,6 @@ const useTodoInput = () => {
     setIsAddingTodo((prev) => !prev);
   };
 
-  // 외부 클릭 감지
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -29,7 +28,6 @@ const useTodoInput = () => {
     };
   }, [isAddingTodo]);
 
-  // 입력 필드에 포커스 설정
   useEffect(() => {
     if (isAddingTodo) {
       setTimeout(() => {

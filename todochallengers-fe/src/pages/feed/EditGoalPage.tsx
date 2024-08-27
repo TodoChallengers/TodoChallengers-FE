@@ -27,7 +27,6 @@ const EditGoalage: React.FC = () => {
 
   return (
     <div className="w-full min-h-screen flex flex-col">
-      {/* Header */}
       <Header
         text="목표"
         element={

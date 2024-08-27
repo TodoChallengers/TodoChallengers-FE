@@ -4,7 +4,6 @@ import { ReactComponent as BackIcon} from '@/assets/back.svg';
 
 interface HeaderProps {
   text: string;
-  // theme: string;
   element?: React.ReactNode;
 }
 

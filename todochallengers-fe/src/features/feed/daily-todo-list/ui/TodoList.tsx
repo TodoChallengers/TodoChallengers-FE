@@ -8,7 +8,6 @@ import useTodoInput from '@/features/feed/daily-todo-list/model/useTodoInput';
 interface TodoListProps {
   goalLabel: string;
   prevTodos: { id: number; label: string; done: boolean }[];
-  //onAddTodo?: () => void;
 }
 
 const TodoList: React.FC<TodoListProps> = ({goalLabel, prevTodos }) => {

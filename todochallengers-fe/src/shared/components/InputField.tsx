@@ -4,7 +4,6 @@ interface InputProps {
   placehold: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-  // theme: string;
   size: string;
 }
 
